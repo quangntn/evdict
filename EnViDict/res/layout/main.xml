@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:background="#FFF" >
+
+            <TextView
+                android:id="@+id/Word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:layout_weight="2"
+                android:paddingLeft="8sp"
+                android:paddingRight="2sp"
+                android:text="@string/hello_world"
+                android:textColor="#424343"
+                android:textSize="22sp"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/favor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="0dp"
+                android:layout_weight="2"
+                android:background="#FFF"
+                android:contentDescription="@string/nodescription"
+                android:minWidth="64dp"
+                android:scaleType="center"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/heart_" />
+
+            <TextView
+                android:id="@+id/idWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:paddingLeft="8dp"
+                android:text="@string/hello_world"
+                android:textColor="#424343"
+                android:textSize="22sp"
+                android:visibility="gone" />
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ScrollView>
+
+</LinearLayout>
